@@ -1,0 +1,12 @@
+#app {
+  width: 100%;
+  display: grid;
+}
+
+main {
+  max-width: 64rem;
+  width: 100%;
+  padding: 2rem;
+  margin-inline: auto;
+  display: grid;
+}

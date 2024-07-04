@@ -1,0 +1,25 @@
+import { defaultTheme } from "../src/styles/themes/default"
+import { Meta, ColorPalette, ColorItem } from "@storybook/blocks"
+
+<Meta title="Colors" />
+
+<ColorPalette>
+  {Object.entries(defaultTheme).reduce((acc, [name, color]) => {
+    const prefix = name.split("-")[0]
+
+    const existingGroup = acc.find(group => group.prefix === prefix)
+
+    if (existingGroup)
+      existingGroup.colors.push({ name, color })
+    else
+      acc.push({ prefix, colors: [{ name, color }] })
+
+    return acc;
+  }, []).map(({ prefix, colors }) => (
+    <ColorItem
+      key={prefix}
+      title={`theme.color.${prefix}`}
+      colors={colors.reduce((acc, { name, color }) => ({ ...acc, [name]: color }), {})}
+    />
+  ))}
+</ColorPalette>
