@@ -1,8 +1,10 @@
 import Accordions from './components/accordion'
+import TabMenus from "@/components/tabMenu";
 
 export const routePaths = [
     '/',
     '/accordion',
+    '/tabMenu',
 ] as const
 
 export type ROUTE_PATH = (typeof routePaths)[number]
@@ -27,6 +29,7 @@ export const routes: Record<ROUTE_PATH, ROUTE> = {
         name: 'root',
         children: [
             '/accordion',
+            '/tabMenu',
         ],
     },
     '/accordion': {
@@ -34,6 +37,12 @@ export const routes: Record<ROUTE_PATH, ROUTE> = {
         link: '/accordion',
         name: '01. 아코디언',
         children: Accordions,
+    },
+    '/tabMenu': {
+        key: '/tabMenu',
+        link: '/tabMenu',
+        name: '02. 탭매뉴',
+        children: TabMenus,
     }
 }
 
