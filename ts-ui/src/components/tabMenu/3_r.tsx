@@ -1,53 +1,53 @@
-import { useState } from 'react'
-import cx from './cx'
-import data from './data'
+import { useState } from "react";
+import cx from "./cx";
+import data from "./data";
 
 const TabItem = ({
-                     id,
-                     title,
-                     description,
-                     current,
-                     toggle,
-                 }: {
-    id: string
-    title: string
-    description: string
-    current: boolean
-    toggle: () => void
+  id,
+  title,
+  description,
+  current,
+  toggle,
+}: {
+  id: string;
+  title: string;
+  description: string;
+  current: boolean;
+  toggle: () => void;
 }) => {
-    return (
-        <li className={cx('item', { current })} key={id}>
-            <div className={cx('tab')} onClick={toggle}>
-                {title}
-            </div>
-            <div className={cx('description')}>{description}</div>
-        </li>
-    )
-}
+  return (
+    <li className={cx("item", { current })} key={id}>
+      <div className={cx("tab")} onClick={toggle}>
+        {title}
+      </div>
+      <div className={cx("description")}>{description}</div>
+    </li>
+  );
+};
 
 const TabMenu3 = () => {
-    const [currentId, setCurrentId] = useState<string>(data[0].id)
+  const [currentId, setCurrentId] = useState<string>(data[0].id);
 
-    const toggleItem = (id: string) => () => {
-        setCurrentId(id)
-    }
-    return (
-        <>
-            <h3>
-                #3. React<sub>Single li</sub>
-            </h3>
-            <ul className={cx('container', 'tabMenu3')}>
-                {data.map((d) => (
-                    <TabItem
-                        {...d}
-                        key={d.id}
-                        current={currentId === d.id}
-                        toggle={toggleItem(d.id)}
-                    />
-                ))}
-            </ul>
-        </>
-    )
-}
+  const toggleItem = (id: string) => () => {
+    setCurrentId(id);
+  };
+  return (
+    <>
+      <h3>
+        #3. React<sub>Single li</sub>
+      </h3>
+      <ul className={cx("container", "tabMenu3")}>
+        {data.map((d) => (
+          <TabItem
+            {...d}
+            key={d.id}
+            current={currentId === d.id}
+            toggle={toggleItem(d.id)}
+          />
+        ))}
+      </ul>
+    </>
+  );
+};
 
-export default TabMenu3
+export default TabMenu3;

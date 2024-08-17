@@ -17,7 +17,7 @@
     cursor: pointer;
 
     &::before {
-      content: '+';
+      content: "+";
       margin: 0 8px 0 -5px;
     }
   }
@@ -35,7 +35,7 @@
         background-color: #ace;
 
         &::before {
-          content: '-';
+          content: "-";
         }
       }
     }
@@ -93,7 +93,7 @@
         background-color: #ace;
 
         &::before {
-          content: '-';
+          content: "-";
         }
       }
 
@@ -130,4 +130,3 @@
     content: "- ";
   }
 }
-
