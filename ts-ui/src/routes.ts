@@ -1,8 +1,9 @@
 import Accordions from "./components/accordion";
 import TabMenus from "@/components/tabMenu";
 import ToolTips from "@/components/toolTip";
+import TextBoxes from "./components/textBox";
 
-export const routePaths = ["/", "/accordion", "/tabMenu", "/toolTip"] as const;
+export const routePaths = ["/", "/accordion", "/tabMenu", "/toolTip", "/textBox"] as const;
 
 export type ROUTE_PATH = (typeof routePaths)[number];
 
@@ -24,7 +25,7 @@ export const routes: Record<ROUTE_PATH, ROUTE> = {
     key: "/",
     link: "/",
     name: "root",
-    children: ["/accordion", "/tabMenu", "/toolTip"],
+    children: ["/accordion", "/tabMenu", "/toolTip", "/textBox"],
   },
   "/accordion": {
     key: "/accordion",
@@ -43,6 +44,12 @@ export const routes: Record<ROUTE_PATH, ROUTE> = {
     link: "/toolTip",
     name: "03. 툴팁",
     children: ToolTips,
+  },
+  "/textBox": {
+    key: "/textBox",
+    link: "/textBox",
+    name: "04. 텍스트박스",
+    children: TextBoxes,
   },
 };
 
