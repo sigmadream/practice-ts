@@ -1,6 +1,6 @@
-import classNames from "classnames/bind";
-import style from "./index.module.scss";
+import styles from './index.module.scss'
+import classNames from 'classnames/bind'
 
-const cx = classNames.bind(style);
+const cx = classNames.bind(styles)
 
-export default cx;
+export default cx

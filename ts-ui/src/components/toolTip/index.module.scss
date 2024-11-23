@@ -16,7 +16,7 @@
     text-align: initial;
     &::after {
       display: inline-block;
-      content: "!";
+      content: '!';
       text-align: center;
       border: 1px solid #ccc;
       width: 1rem;
@@ -52,12 +52,12 @@
 
   .summary {
     &::marker {
-      content: "";
+      content: '';
       display: none;
     }
     &::after {
       display: inline-block;
-      content: "!";
+      content: '!';
       text-align: center;
       border: 1px solid #ccc;
       width: 1rem;
