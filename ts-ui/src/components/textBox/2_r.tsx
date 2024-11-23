@@ -1,6 +1,6 @@
 import { SyntheticEvent } from "react";
-import cx from "./cx";
 import { measureLines } from "@/service/util";
+import cx from "@/components/textBox/cx";
 
 const TextBox2 = () => {
   const handleChange = (e: SyntheticEvent) => {

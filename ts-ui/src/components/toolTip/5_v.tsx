@@ -1,6 +1,6 @@
-import VanillaWrapper from "../vanillaWrapper";
-import cx from "./cx";
-import data from "./data";
+import VanillaWrapper from "@/components/vanillaWrapper";
+import cx from "@/components/toolTip/cx";
+import data from "@/components/toolTip/data";
 
 const initiator = (wrapper: HTMLDivElement) => {
   const $tooltips = data.map(({ id, title, description }) => {

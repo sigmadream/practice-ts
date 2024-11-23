@@ -1,6 +1,6 @@
 import { measureLines } from "@/service/util";
-import VanillaWrapper from "../vanillaWrapper";
-import cx from "./cx";
+import VanillaWrapper from "@/components/vanillaWrapper";
+import cx from "@/components/textBox/cx";
 
 const initiator = (wrapper: HTMLDivElement) => {
   const $text = document.createElement("textarea");

@@ -1,9 +1,9 @@
 import { SyntheticEvent, useEffect } from "react";
-import data from "./data";
 import SingleOpenContextProvider, {
   useSingleOpen,
-} from "../../context/singleOpenContext";
-import cx from "./cx";
+} from "@/context/singleOpenContext";
+import cx from "@/components/toolTip/cx";
+import data from "@/components/toolTip/data";
 
 const Tooltip = ({
   id,

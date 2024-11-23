@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import cx from "./cx";
-import data from "./data";
+import cx from "@/components/tabMenu/cx";
+import data from "@/components/tabMenu/data";
 
 const TabItem = ({
   id,

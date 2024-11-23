@@ -1,6 +1,6 @@
 import { useState } from "react";
-import cx from "./cx";
-import data from "./data";
+import cx from "@/components/accordion/cx";
+import data from "@/components/accordion/data";
 
 const AccordionItem = ({
   id,

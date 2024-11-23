@@ -1,9 +1,9 @@
-import Tooltip1 from "./1_r";
-import Tooltip2 from "./2_r";
-import Tooltip3 from "./3_r";
-import Tooltip4 from "./4_r";
-import Tooltip5V from "./5_v";
-import cx from "./cx";
+import Tooltip1 from "@/components/toolTip/1_r";
+import Tooltip2 from "@/components/toolTip/2_r";
+import Tooltip3 from "@/components/toolTip/3_r";
+import Tooltip4 from "@/components/toolTip/4_r";
+import Tooltip5V from "@/components/toolTip/5_v";
+import cx from "@/components/toolTip/cx";
 
 const Tooltips = () => {
   return (

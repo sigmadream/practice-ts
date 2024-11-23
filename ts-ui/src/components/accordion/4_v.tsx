@@ -1,5 +1,5 @@
-import cx from "./cx";
-import data from "./data";
+import cx from "@/components/accordion/cx";
+import data from "@/components/accordion/data";
 import VanillaWrapper from "@/components/vanillaWrapper";
 
 const itemBuilder = ({

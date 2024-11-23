@@ -1,8 +1,8 @@
-import Accordion1 from "./1_r";
-import Accordion2 from "./2_r";
-import Accordion3 from "./3_r";
-import Accordion4V from "./4_v";
-import cx from "./cx";
+import Accordion1 from "@/components/accordion/1_r";
+import Accordion2 from "@/components/accordion/2_r";
+import Accordion3 from "@/components/accordion/3_r";
+import Accordion4V from "@/components/accordion/4_v";
+import cx from "@/components/accordion/cx";
 
 const Accordions = () => {
   return (

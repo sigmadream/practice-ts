@@ -1,6 +1,6 @@
 import { SyntheticEvent, useEffect, useState } from "react";
-import cx from "./cx";
-import data from "./data";
+import cx from "@/components/toolTip/cx";
+import data from "@/components/toolTip/data";
 
 const Tooltip = ({
   id,

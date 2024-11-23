@@ -1,6 +1,6 @@
 import { SyntheticEvent, useState } from "react";
-import cx from "./cx";
 import { measureLines } from "@/service/util";
+import cx from "@/components/textBox/cx";
 
 const TextBox1 = () => {
   const [text, setText] = useState("");

@@ -1,5 +1,6 @@
-import styles from './index.module.scss'
-import classNames from 'classnames/bind'
+import classNames from "classnames/bind";
+import styles from "@/components/toolTip/index.module.scss";
+
 
 const cx = classNames.bind(styles)
 

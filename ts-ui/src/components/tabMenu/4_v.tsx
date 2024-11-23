@@ -1,6 +1,6 @@
-import cx from "./cx";
-import data from "./data";
-import VanillaWrapper from "../vanillaWrapper";
+import VanillaWrapper from "@/components/vanillaWrapper";
+import cx from "@/components/tabMenu/cx";
+import data from "@/components/tabMenu/data";
 
 const buildTabMenus = ({ id, title }: { id: string; title: string }) => {
   const $li = document.createElement("li");
